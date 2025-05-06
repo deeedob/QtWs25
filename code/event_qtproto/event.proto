@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Event {
+    enum Type {
+        UNKNOWN = 0;
+        USER = 1;
+        SYSTEM = 2;
+    }
+    Type type = 1;
+    string name = 2;
+}
